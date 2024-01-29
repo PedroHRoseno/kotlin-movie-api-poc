@@ -6,6 +6,7 @@ import org.springframework.stereotype.Repository
 
 @Repository
 interface MovieRepository: JpaRepository<Movie, Long> {
+    fun existsByTitle(title: String?): Boolean
+    fun findByTitle(title: String): Movie?
 
-    override fun findAll(): MutableList<Movie>
 }

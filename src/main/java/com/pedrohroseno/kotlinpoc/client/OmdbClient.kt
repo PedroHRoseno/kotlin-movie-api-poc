@@ -10,5 +10,5 @@ import org.springframework.web.bind.annotation.RequestParam
 interface OmdbClient {
 
     @GetMapping
-        fun findMovieByTitle(@RequestParam t: String, @RequestParam apiKey: String): OmdbResponse
+    fun findMovieByTitle(@RequestParam t: String, @RequestParam apiKey: String): OmdbResponse
 }
